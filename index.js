@@ -1,8 +1,8 @@
 //Imports
-const fx = require("fs");
+const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
-
+const generate = require("./utils/generateMarkdown.js");
 
 // array of questions for user
 const questions = [
@@ -20,6 +20,8 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+
+    fs.writeFile(fileName, generate(data), (err) => {return console.log(err);})
 }
 
 // function to initialize program  //main function
@@ -27,7 +29,10 @@ function init() {
     inquirer.prompt(questions)
     .then((res) =>{
         console.log(res);
+        writeToFile("output/README.md", res);
+
     })
+    .catch( (err) => {return console.log(err)})
 
 }
 
