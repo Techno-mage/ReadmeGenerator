@@ -1,4 +1,5 @@
 //Imports
+const mkdirp = require('mkdirp');
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
@@ -21,7 +22,14 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
 
-    fs.writeFile(fileName, generate(data), (err) => {return console.log(err);})
+    mkdirp("output"), (err) =>{
+        if (err){
+            return (err)
+        }
+
+    }
+
+    fs.writeFile(fileName, generate(data), (err) => { if(err) {return console.log(err);}})
 }
 
 // function to initialize program  //main function
