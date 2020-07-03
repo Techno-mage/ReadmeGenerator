@@ -11,9 +11,9 @@ const questions = [
     {type: "input", message: "Write a brief description of your project", name: "desc"},
     {type: "input", message: "Write down installation instructions if any.", name: "install"},
     {type: "input", message: "Write a description of how to use this app.", name: "usage"},
-    {type: "input", message: "Please list the projects contributers.", name: "contribute"},
+    {type: "input", message: "Tell people how they can contribute to the project.", name: "contribute"},
     {type: "input", message: "Please include any testing if applicable.", name: "tests"},
-    {type: "list", message: "Please select a licence", choices: ["this", "that", "the other"], name:"licence"},
+    {type: "list", message: "Please select a license", choices: ["MIT", "ISC", "GNU GPLv3"], name:"license"},
     {type: "input", message: "Enter your Github user Name.", name: "username"},
     {type: "input", message: "Enter your Email address.", name: "email"}
 
