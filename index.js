@@ -25,18 +25,26 @@ function writeToFile(fileName, data) {
     mkdirp("output"), (err) =>{
         if (err){
             return (err)
-        }
+        } 
 
     }
 
-    fs.writeFile(fileName, generate(data), (err) => { if(err) {return console.log(err);}})
+    fs.writeFile(fileName, generate(data), (err) => { 
+        if(err) {
+            return console.log(err);
+        
+        } else {
+            console.log("Successfully written to file.")
+        }
+    
+    })
 }
 
 // function to initialize program  //main function
 function init() {
     inquirer.prompt(questions)
     .then((res) =>{
-        console.log(res);
+        //console.log(res);
         writeToFile("output/README.md", res);
 
     })
