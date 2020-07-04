@@ -31,4 +31,7 @@
 
 * A video walkthrough has been provided, you can find it in https://drive.google.com/file/d/15gR0Xm7yoagoyDecTrCj9FpindwK14LE/view?usp=sharing
 
- 
+
+## Sample
+
+* A sample READme has been provided in the assets/sample folder, link here: <a href= "assets/sample/README.md">Sample</a>
