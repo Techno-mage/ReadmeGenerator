@@ -23,4 +23,12 @@
 
 <img src= "assets/images/terminal_screenshot.png" style="width: 1600px; height: auto;">
 
-## 
+* After the user finishes the prompts, the generator will create an "output" folder, and will write the readme file to that folder. 
+
+<img src= "assets/images/readme_example.png" style="width: 1600px; height: auto;">
+
+## Demo Video
+
+* A video walkthrough has been provided, you can find it in https://drive.google.com/file/d/15gR0Xm7yoagoyDecTrCj9FpindwK14LE/view?usp=sharing
+
+ 
